@@ -8,7 +8,7 @@ function Home() {
     <div className="">
       <SearchBar />
 
-      <div className=" p-10 max-xl:mt-96 max-w-xl md:max-w-2xl  lg:max-w-5xl 2xl:max-w-7xl mx-auto grid gap-3 max-lg:gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 ">
+      <div className=" p-10 max-xl:mt-80 max-w-xl md:max-w-2xl  lg:max-w-5xl 2xl:max-w-7xl mx-auto grid gap-3 max-lg:gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 ">
         {Data.map((e, index) => (
           <Card
             image={e.image}

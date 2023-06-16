@@ -9,7 +9,7 @@ function SearchBar() {
   return (
     <>
       <div className=" relative bg-[url('./assets/mainPhoto.jpg')] h-60 bg-contain mb-40">
-        <div className="bg-white p-5 shadow-md md:max-w-4xl lg:max-w-2xl xl:max-w-5xl xl:top-48 2xl:max-w-7xl absolute top-96 left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-lg ">
+        <div className="bg-white  p-5 shadow-md md:max-w-4xl lg:max-w-2xl xl:max-w-5xl top-72 xl:top-32 2xl:top-96 2xl:max-w-7xl absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-lg ">
           <div className="flex justify-between">
             <h1 className="2xl:text-4xl lg:text-3xl   text-xl font-semibold text-gray-700 pb-5">
               The simplest way to book bus travel.
@@ -67,7 +67,7 @@ function SearchBar() {
                   </svg>
 
                   <input
-                    className="outline-none xl:py-1 py-3 font-light text-balck"
+                    className="w-60 outline-none xl:py-1 py-3 font-light text-balck"
                     type="text"
                     placeholder="From:address or city"
                   />
