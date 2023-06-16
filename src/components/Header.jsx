@@ -2,6 +2,7 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 import Button from "../utils/Button";
+import BusIcon from "../assets/BusIcon.png";
 
 const navigation = [{ name: "", href: "/" }];
 
@@ -27,7 +28,8 @@ export default function Header({ children }) {
                 </div>
 
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                  <div className="">
+                  <div className="flex">
+                    <img className="w-20" src={BusIcon} alt="" />
                     <a
                       className="text-green-400 font-bold text-3xl lg:text-5xl 2xl:text-7xl"
                       href=""

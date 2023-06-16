@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BusIcon from "../assets/pngwing.com.png";
+import BusIcon from "../assets/BusIcon.png";
 import Button from "../utils/Button";
 
 function SearchBar() {

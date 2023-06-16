@@ -1,0 +1,28 @@
+import BusData from "./BST.png";
+
+export const busData = [
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+  BusData,
+];
