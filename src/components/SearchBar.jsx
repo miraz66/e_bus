@@ -9,46 +9,50 @@ function SearchBar() {
   return (
     <>
       <div className=" relative bg-[url('./assets/mainPhoto.jpg')] h-60 bg-contain mb-40">
-        <div className=" absolute  xl:max-w-6xl md:max-w-3xl md:top-48 top-96  shadow-md left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-5 rounded-lg bg-white">
+        <div className="bg-white p-5 shadow-md md:max-w-4xl lg:max-w-2xl xl:max-w-5xl xl:top-48 2xl:max-w-7xl absolute top-96 left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-lg ">
           <div className="flex justify-between">
-            <h1 className="md:text-3xl  text-xl font-semibold text-gray-700 pb-5">
+            <h1 className="2xl:text-4xl lg:text-3xl   text-xl font-semibold text-gray-700 pb-5">
               The simplest way to book bus travel.
             </h1>
             <div className="-mt-4">
-              <img className="md:h-20 md:w-20 w-14 h-14" src={BusIcon} alt="" />
+              <img
+                className="md:h-20 md:w-20 w-20 max-md:mt-3 h-14"
+                src={BusIcon}
+                alt=""
+              />
             </div>
           </div>
 
-          <div className="">
-            <form className=" ">
-              <div className="">
-                <div className="flex gap-5">
-                  <div className="flex gap-1">
-                    <input
-                      className="w-5"
-                      onClick={() => setRound(false)}
-                      type="radio"
-                      id="onway"
-                      name="value"
-                    />
-                    <label htmlFor="onway">One way</label>
-                  </div>
+          <form className="">
+            <div className="">
+              <div className="flex gap-5">
+                <div className="flex gap-1">
+                  <input
+                    className="w-5"
+                    onClick={() => setRound(false)}
+                    type="radio"
+                    id="onway"
+                    name="value"
+                  />
+                  <label htmlFor="onway">One way</label>
+                </div>
 
-                  <div className="flex gap-1">
-                    <input
-                      className="w-5"
-                      onClick={() => setRound(true)}
-                      type="radio"
-                      id="Round"
-                      name="value"
-                    />
-                    <label htmlFor="Round">Round trip</label>
-                  </div>
+                <div className="flex gap-1">
+                  <input
+                    className="w-5"
+                    onClick={() => setRound(true)}
+                    type="radio"
+                    id="Round"
+                    name="value"
+                  />
+                  <label htmlFor="Round">Round trip</label>
                 </div>
               </div>
+            </div>
 
-              <div className=" text-sm gap-2 mt-5 flex justify-center md:flex-nowrap flex-wrap">
-                <div className="rounded-md px-2 border  flex gap-1 justify-center items-center ">
+            <div className=" text-sm gap-2 mt-5 flex max-xl:flex-wrap">
+              <div className="w-full xl:flex gap-2">
+                <div className=" rounded-md px-2 border flex gap-1 justify-center items-center ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -63,7 +67,7 @@ function SearchBar() {
                   </svg>
 
                   <input
-                    className="outline-none py-3   font-light text-balck"
+                    className="outline-none xl:py-1 py-3 font-light text-balck"
                     type="text"
                     placeholder="From:address or city"
                   />
@@ -71,14 +75,14 @@ function SearchBar() {
 
                 <div
                   onClick={() => setRounded(!rounded)}
-                  className="rounded-md px-2 border  flex items-center"
+                  className=" w-full flex justify-center"
                 >
                   <svg
                     aria-hidden="true"
                     className={
                       !rounded
-                        ? "w-5 h-5 transform -rotate-0"
-                        : "w-5 h-5  transform rotate-90"
+                        ? "w-12 h-12 px-2 max-xl:my-1 transform rotate-0 rounded-md border"
+                        : "w-12 h-12 px-2 max-xl:my-1 transform rotate-90 rounded-md  border"
                     }
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -95,7 +99,7 @@ function SearchBar() {
                   </svg>
                 </div>
 
-                <div className="rounded-md px-2 border  flex gap-1 justify-center items-center ">
+                <div className="rounded-md px-2 border w-full  flex gap-1 justify-center items-center ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -110,46 +114,48 @@ function SearchBar() {
                   </svg>
 
                   <input
-                    className="outline-none py-3   font-light text-balck"
+                    className="outline-none py-3 font-light text-balck"
                     type="text"
                     placeholder="To:address or city"
                   />
                 </div>
+              </div>
 
-                <div className="rounded-md px-2 border  flex">
+              <div className=" w-full flex max-lg:flex-wrap gap-2">
+                <input
+                  className="outline-none w-full border rounded-md pl-4 pr-5 py-3 max-md:w-full  font-light text-balck"
+                  type="date"
+                />
+                {round && (
                   <input
-                    className="outline-none w-full pr-5 py-3 font-light text-balck"
+                    className="outline-none w-full border rounded-md pl-4 pr-5 py-3 max-md:w-full  font-light text-balck"
                     type="date"
                   />
-                  {round && (
-                    <input
-                      className="outline-none w-full border-l-2 pl-2 border-gray-700"
-                      type="date"
-                    />
-                  )}
-                </div>
-
-                <div className="">
-                  <Button
-                    name={"Search"}
-                    css={" block px-24 md:px-7  py-3 uppercase "}
-                  />
-                </div>
+                )}
               </div>
 
-              <div className="flex gap-5 text-sm font-light mt-3 ">
-                <div className="flex gap-1">
-                  <input type="checkbox" name="chack" id="ac" />
-                  <label htmlFor="ac">A\C</label>
-                </div>
-
-                <div className="flex gap-1">
-                  <input type="checkbox" name="chack" id="nonAc" />
-                  <label htmlFor="nonAc">Non A\C</label>
-                </div>
+              <div className="w-full">
+                <Button
+                  name={"Search"}
+                  css={
+                    "text-center py-3 xl:px-5 2xl:px-10 2xl:py-4 block uppercase "
+                  }
+                />
               </div>
-            </form>
-          </div>
+            </div>
+
+            <div className="flex gap-5 text-sm font-light mt-3 ">
+              <div className="flex gap-1">
+                <input type="checkbox" name="chack" id="ac" />
+                <label htmlFor="ac">A\C</label>
+              </div>
+
+              <div className="flex gap-1">
+                <input type="checkbox" name="chack" id="nonAc" />
+                <label htmlFor="nonAc">Non A\C</label>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </>

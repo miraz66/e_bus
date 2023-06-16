@@ -7,13 +7,13 @@ function Home() {
     <div className="">
       <SearchBar />
 
-      <div className=" w-10/12 mx-auto p-10 grid grid-cols-4 justify-between auto-rows-auto">
+      <div className=" p-5 max-xl:mt-96  max-w-xl md:max-w-2xl lg:max-w-5xl 2xl:max-w-7xl mx-auto grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 ">
         {Data.map((e, index) => (
           <Card
             image={e.image}
             name={e.name}
             paragraph={e.paragraph}
-            css={"text-center"}
+            css={"text-center shadow rounded-md p-3"}
             imageCss={"w-12 mx-auto"}
             hCss={"text-xl font-bold"}
             pCss={"text-lg"}
