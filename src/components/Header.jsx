@@ -28,8 +28,12 @@ export default function Header({ children }) {
                 </div>
 
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                  <div className="flex justify-center">
-                    <img className="w-20" src={BusIcon} alt="" />
+                  <div className="flex items-center">
+                    <img
+                      className="xl:w-20 md:w-16 w-14 "
+                      src={BusIcon}
+                      alt=""
+                    />
                     <a
                       className="text-green-400 font-bold text-3xl lg:text-5xl 2xl:text-7xl"
                       href=""

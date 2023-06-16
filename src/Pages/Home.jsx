@@ -42,6 +42,10 @@ function Home() {
           ))}
         </div>
       </div>
+
+      {/* Company Details */}
+
+      <div className="max-w-7xl mx-auto"></div>
     </div>
   );
 }
