@@ -4,12 +4,12 @@ function MobileApp() {
   return (
     <>
       <div className="max-w-7xl mx-auto p-10 flex lg:flex-nowrap flex-wrap-reverse">
-        <div className="mt-20 lg:mx-0 mx-auto">
-          <h1 className="2xl:text-4xl text-gray-800">
+        <div className=" mt-20 lg:mx-0 mx-auto justify-between">
+          <h1 className="2xl:text-4xl text-xl text-gray-800">
             Book buses on the go with the E-bus app.
           </h1>
 
-          <p className="2xl:text-xl py-10 text-gray-700">
+          <p className="2xl:text-xl text-sm py-10 text-gray-700">
             Download our app and snag the best travel deals <br /> across
             Bangladesh.{" "}
             <span className="pt-1 flex text-gray-500 items-center hover:gap-1 hover:underline cursor-pointer">
@@ -103,7 +103,6 @@ function MobileApp() {
 
               <div className="flex items-center flex-col px-2">
                 <img className="" src={LocationPhoto} alt="" />
-
                 <button className="w-full py-2 m-5 bg-red-500">Search</button>
               </div>
             </div>

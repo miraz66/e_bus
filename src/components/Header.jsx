@@ -30,7 +30,7 @@ export default function Header({ children }) {
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex items-center">
                     <img
-                      className="xl:w-20 md:w-16 w-14 "
+                      className="w-10 md:w-16 xl:w-20"
                       src={BusIcon}
                       alt=""
                     />

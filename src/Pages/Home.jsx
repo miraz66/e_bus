@@ -1,9 +1,11 @@
 import Card from "../components/Card";
 import SearchBar from "../components/SearchBar";
-import { Data } from "../assets/Data";
-import { busData } from "../assets/busDAta/BusData";
 import CompanyDetails from "../components/CompanyDetails";
 import MobileApp from "../components/MobileApp";
+import Footer from "../components/Footer";
+
+import { Data } from "../assets/Data";
+import { busData } from "../assets/busDAta/BusData";
 
 function Home() {
   return (
@@ -51,8 +53,14 @@ function Home() {
       <CompanyDetails />
 
       {/* Mobile App */}
-      <div className="mb-20 lg:h-[600px]  bg-gradient-to-br from-sky-300 via-green-300 to-sky-300 overflow-hidden">
+      <div className="mb-10 lg:h-[600px]  bg-gradient-to-br from-sky-300 via-green-300 to-sky-300 overflow-hidden">
         <MobileApp />
+      </div>
+
+      {/* Footer */}
+
+      <div className="">
+        <Footer />
       </div>
     </div>
   );
