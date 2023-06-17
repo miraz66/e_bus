@@ -8,7 +8,7 @@ function SearchBar() {
 
   return (
     <>
-      <div className=" relative bg-[url('./assets/mainPhoto.jpg')] h-60 bg-contain mb-40">
+      <div className=" relative bg-[url('./assets/mainPhoto.jpg')] h-64 bg-contain mb-40">
         <div className="bg-white  p-5 shadow-md md:max-w-4xl lg:max-w-2xl xl:max-w-5xl top-72 xl:top-32 2xl:top-48 2xl:max-w-7xl absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-lg ">
           <div className="flex justify-between">
             <h1 className="2xl:text-4xl lg:text-3xl   text-xl font-semibold text-gray-700 pb-5">
@@ -114,7 +114,7 @@ function SearchBar() {
                   </svg>
 
                   <input
-                    className="outline-none py-3 font-light text-balck"
+                    className="max-md:w-full outline-none py-3 font-light text-balck"
                     type="text"
                     placeholder="To:address or city"
                   />
@@ -123,12 +123,12 @@ function SearchBar() {
 
               <div className=" w-full flex max-lg:flex-wrap gap-2">
                 <input
-                  className="outline-none w-full border rounded-md pl-4 pr-5 py-3 max-md:w-full  font-light text-balck"
+                  className="outline-none border rounded-md pl-4 pr-5 py-3 max-md:w-full  font-light text-balck"
                   type="date"
                 />
                 {round && (
                   <input
-                    className="outline-none w-full border rounded-md pl-4 pr-5 py-3 max-md:w-full  font-light text-balck"
+                    className="outline-none border rounded-md pl-4 pr-5 py-3 max-md:w-full  font-light text-balck"
                     type="date"
                   />
                 )}
