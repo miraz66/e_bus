@@ -60,7 +60,7 @@ function Home() {
 
       {/* Most Popular Routes */}
       <div className="max-w-7xl mx-auto p-10 pb-28">
-        <h1 className="text-xl md:text-3xl xl:text-5xl text-center py-20">
+        <h1 className="text-xl md:text-3xl xl:text-5xl text-center xl:py-20 pb-10">
           {" "}
           Most Popular Routes
         </h1>
