@@ -24,7 +24,7 @@ function SearchBar() {
           </div>
 
           <form className="">
-            <div className="">
+            <>
               <div className="flex gap-5">
                 <div className="flex gap-1">
                   <input
@@ -48,7 +48,7 @@ function SearchBar() {
                   <label htmlFor="Round">Round trip</label>
                 </div>
               </div>
-            </div>
+            </>
 
             <div className=" text-sm gap-2 mt-5 flex max-xl:flex-wrap">
               <div className="w-full xl:flex gap-2">

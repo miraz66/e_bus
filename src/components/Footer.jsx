@@ -6,14 +6,18 @@ function Footer() {
       <div className="max-w-7xl p-10 mx-auto flex justify-between flex-wrap-reverse md:flex-nowrap max-lg:gap-10">
         <div className="">
           <div className="flex gap-1 md:mb-10">
-            <img className="w-10 md:w-10 xl:w-16" src={BusIcon} alt="" />
+            <img className="w-10 md:w-10 h-full xl:w-16" src={BusIcon} alt="" />
             <h1 className=" text-3xl md:text-5xl xl:text-7xl font-bold text-green-500">
               E-bus
             </h1>
           </div>
 
           <div className="flex gap-1">
-            <a className="p-2 hover:bg-gray-200 rounded-full" href="">
+            <a
+              className="p-2 hover:bg-gray-200 rounded-full"
+              href="#"
+              aria-label="Instagram link"
+            >
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -25,7 +29,11 @@ function Footer() {
               </svg>
             </a>
 
-            <a className="p-2 hover:bg-gray-200 rounded-full" href="">
+            <a
+              className="p-2 hover:bg-gray-200 rounded-full"
+              href="#"
+              aria-label="Facebook link"
+            >
               <svg
                 aria-hidden="true"
                 className="w-5 h-5"
@@ -37,7 +45,11 @@ function Footer() {
               </svg>
             </a>
 
-            <a className="p-2 hover:bg-gray-200 rounded-full" href="">
+            <a
+              className="p-2 hover:bg-gray-200 rounded-full"
+              href="#"
+              aria-label="Twtter link"
+            >
               <svg
                 aria-hidden="true"
                 className="w-5 h-5"
@@ -49,7 +61,11 @@ function Footer() {
               </svg>
             </a>
 
-            <a className="p-2 hover:bg-gray-200 rounded-full" href="">
+            <a
+              className="p-2 hover:bg-gray-200 rounded-full"
+              href="#"
+              aria-label="LinkedIn link"
+            >
               <svg
                 aria-hidden="true"
                 className="w-5 h-5"
@@ -62,7 +78,8 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div className="">
+
+        <div>
           <ul className="text-gray-600 max-lg:pr-8 flex flex-col gap-1 md:text-xs xl:text-xl">
             <li className="text-gray-800 font-bold pb-2 text-xl md:text-lg xl:text-2xl">
               ENGAGE
@@ -81,7 +98,8 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="">
+
+        <div>
           <ul className="text-gray-600 max-lg:pr-8 flex flex-col gap-1  md:text-xs xl:text-xl">
             <li className="text-gray-800 font-bold pb-2 text-xl md:text-lg xl:text-2xl">
               ABOUT
@@ -100,7 +118,8 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="">
+
+        <div>
           <ul className="text-gray-600 max-lg:pr-8 flex flex-col gap-1 md:text-xs xl:text-xl">
             <li className="text-gray-800 font-bold pb-2 text-xl md:text-lg xl:text-2xl">
               CUSTOMER SERVICE

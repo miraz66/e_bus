@@ -69,7 +69,7 @@ export default function Header({ children }) {
                   <Button
                     name={"Login"}
                     css={
-                      " max-sm:hidden px-10  py-2 text-xl 2xl:text-2xl 2xl:px-14 2xl:py-4   "
+                      " max-sm:hidden px-8  py-2 text-xl 2xl:text-2xl 2xl:px-12 2xl:py-3   "
                     }
                   />
 
