@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 
 import { Data } from "../assets/Data";
 import { busData } from "../assets/busDAta/BusData";
+import { RoutsData } from "../assets/routesData/Data";
 
 function Home() {
   return (
@@ -17,11 +18,11 @@ function Home() {
       <div className=" p-10 max-xl:mt-80 max-w-xl md:max-w-2xl  lg:max-w-5xl 2xl:max-w-7xl mx-auto grid gap-3 max-lg:gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 ">
         {Data.map((e, index) => (
           <Card
-            image={e.image}
+            icon={e.image}
             name={e.name}
             paragraph={e.paragraph}
             css={"text-center shadow rounded-md p-3"}
-            imageCss={"w-12 mx-auto"}
+            iconCss={"w-12 mx-auto"}
             hCss={"py-2 text-xl 2xl:text-2xl font-bold"}
             pCss={"text-base 2xl:text-xl"}
             key={index}
@@ -55,6 +56,27 @@ function Home() {
       {/* Mobile App */}
       <div className="mb-10 lg:h-[600px]  bg-gradient-to-br from-sky-300 via-green-300 to-sky-300 overflow-hidden">
         <MobileApp />
+      </div>
+
+      {/* Most Popular Routes */}
+      <div className="max-w-7xl mx-auto p-10 pb-28">
+        <h1 className="text-xl md:text-3xl xl:text-5xl text-center py-20">
+          {" "}
+          Most Popular Routes
+        </h1>
+        <div className=" gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          {RoutsData.map(({ images, route }, index) => (
+            <Card
+              key={index}
+              images={images}
+              imagesCss="shadow hover:scale-110 ease-in-out duration-200"
+              name={route}
+              css="border"
+              hCss={"py-2 pl-2"}
+              imgDevCss="overflow-hidden"
+            />
+          ))}
+        </div>
       </div>
 
       {/* Footer */}
