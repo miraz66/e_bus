@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 function Button({ name, css }) {
   const mainCss =
     css +
-    " text-gray-800 bg-gradient-to-br rounded-md from-sky-300 via-green-300 to-sky-300";
+    " text-gray-800 rounded-md bg-gradient-to-br from-sky-300 via-green-300 to-sky-300";
 
-  return <div className={mainCss}>{name}</div>;
+  return <button className={mainCss}>{name}</button>;
 }
 
 Button.propTypes = {

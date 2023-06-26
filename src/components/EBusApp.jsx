@@ -1,6 +1,9 @@
 import LocationPhoto from "../assets/locationImge.png";
+import { useNavigate } from "react-router-dom";
 
-function MobileApp() {
+function EBusApp() {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="max-w-7xl mx-auto p-10 flex lg:flex-nowrap flex-wrap-reverse">
@@ -66,7 +69,10 @@ function MobileApp() {
         </div>
 
         <div className="mx-auto  ">
-          <div className=" p-5 bg-[url('./assets/mobilePhoto.png')] bg-cover lg:h-[720px] h-96 w-64 lg:w-[350px] ">
+          <div
+            onClick={() => navigate("/app")}
+            className="p-5 bg-[url('./assets/mobilePhoto.png')] bg-cover lg:h-[720px] h-96 w-64 lg:w-[350px] cursor-pointer"
+          >
             <div className="flex flex-col justify-between h-full lg:pb-32">
               <div className="text-white flex  justify-between">
                 <p className="pl-4 text-sm">13.34</p>
@@ -113,4 +119,4 @@ function MobileApp() {
   );
 }
 
-export default MobileApp;
+export default EBusApp;

@@ -2,7 +2,8 @@ import Header from "./components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // ---All pages---
-import Home from "./Pages/Home";
+import Home from "./pages/MainPages";
+import MobileApp from "./pages/MobileApp";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Header>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/app" element={<MobileApp />} />
           </Routes>
         </Header>
       </BrowserRouter>

@@ -1,7 +1,7 @@
 import Card from "../components/Card";
 import SearchBar from "../components/SearchBar";
 import CompanyDetails from "../components/CompanyDetails";
-import MobileApp from "../components/MobileApp";
+import EBusApp from "../components/EBusApp";
 import Footer from "../components/Footer";
 
 import { Data } from "../assets/Data";
@@ -15,7 +15,7 @@ function Home() {
       <SearchBar />
 
       {/* Service Card */}
-      <div className="p-10 max-xl:mt-80 max-w-xl md:max-w-2xl  lg:max-w-5xl 2xl:max-w-7xl mx-auto grid gap-3 max-lg:gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 ">
+      <div className="p-10 max-xl:mt-80 max-w-xl md:max-w-2xl  lg:max-w-5xl 2xl:max-w-7xl mx-auto grid gap-5 max-lg:gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 ">
         {Data.map((e, index) => (
           <Card
             icon={e.image}
@@ -54,8 +54,8 @@ function Home() {
       <CompanyDetails />
 
       {/* Mobile App */}
-      <div className="mb-10 lg:h-[600px]  bg-gradient-to-br from-sky-300 via-green-300 to-sky-300 overflow-hidden">
-        <MobileApp />
+      <div className="mb-10 lg:h-[600px] bg-gradient-to-br from-sky-300 via-green-300 to-sky-300 overflow-hidden">
+        <EBusApp />
       </div>
 
       {/* Most Popular Routes */}
@@ -64,15 +64,15 @@ function Home() {
           {" "}
           Most Popular Routes
         </h2>
-        <div className=" gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {RoutsData.map(({ images, route }, index) => (
             <Card
               key={index}
               images={images}
               imagesCss="shadow hover:scale-110 ease-in-out duration-200"
               name={route}
-              css="border"
-              hCss={"py-2 pl-2"}
+              css="border cursor-pointer"
+              hCss={"py-2 pl-2 hover:underline"}
               imgDevCss="overflow-hidden"
             />
           ))}

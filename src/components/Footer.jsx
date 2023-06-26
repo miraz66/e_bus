@@ -7,7 +7,7 @@ function Footer() {
         <div className="">
           <div className="flex gap-1 md:mb-10">
             <img className="w-10 md:w-10 h-full xl:w-16" src={BusIcon} alt="" />
-            <h1 className=" text-3xl md:text-5xl xl:text-7xl font-bold text-green-500">
+            <h1 className=" text-3xl md:text-5xl xl:text-6xl font-bold text-green-500">
               E-bus
             </h1>
           </div>

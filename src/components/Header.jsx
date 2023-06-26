@@ -36,7 +36,7 @@ export default function Header({ children }) {
                     />
                     <a
                       className="text-green-400 font-bold text-3xl lg:text-5xl 2xl:text-7xl"
-                      href=""
+                      href="http://localhost:5173/"
                     >
                       E-Bus
                     </a>
@@ -64,12 +64,12 @@ export default function Header({ children }) {
                 </div>
                 <div
                   className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static 
-                              sm:inset-auto sm:ml-6 sm:pr-0 gap-3 "
+                              sm:inset-auto sm:ml-6 sm:pr-0 gap-3 cursor-pointer"
                 >
                   <Button
                     name={"Login"}
                     css={
-                      " max-sm:hidden px-8  py-2 text-xl 2xl:text-2xl 2xl:px-12 2xl:py-3   "
+                      "max-sm:hidden px-8  py-2 text-xl 2xl:text-2xl 2xl:px-12 2xl:py-3"
                     }
                   />
 

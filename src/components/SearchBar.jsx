@@ -8,8 +8,8 @@ function SearchBar() {
 
   return (
     <>
-      <div className=" relative bg-[url('./assets/mainPhoto.jpg')] h-64 bg-contain mb-40">
-        <div className="bg-white  p-5 shadow-md md:max-w-4xl lg:max-w-2xl xl:max-w-5xl top-72 xl:top-32 2xl:top-48 2xl:max-w-7xl absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-lg ">
+      <div className=" relative bg-[url('./assets/mainPhoto.jpg')] h-72 bg-contain mb-40">
+        <div className="bg-white  p-5 shadow-md md:max-w-4xl lg:max-w-2xl xl:max-w-5xl top-72 xl:top-60 2xl:max-w-7xl absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-lg ">
           <div className="flex justify-between">
             <h1 className="2xl:text-4xl lg:text-3xl   text-xl font-semibold text-gray-700 pb-5">
               The simplest way to book bus travel.
@@ -121,7 +121,7 @@ function SearchBar() {
                 </div>
               </div>
 
-              <div className=" w-full flex max-lg:flex-wrap gap-2">
+              <div className="w-full flex max-lg:flex-wrap gap-2">
                 <input
                   className="outline-none border rounded-md pl-4 pr-5 py-3 max-md:w-full  font-light text-balck"
                   type="date"
@@ -138,7 +138,7 @@ function SearchBar() {
                 <Button
                   name={"Search"}
                   css={
-                    "text-center py-3 xl:px-5 2xl:px-10 2xl:py-4 block uppercase "
+                    "text-center py-3 xl:px-5 2xl:px-10 2xl:py-4 block uppercase cursor-pointer"
                   }
                 />
               </div>
