@@ -123,12 +123,12 @@ function SearchBar() {
 
               <div className="w-full flex max-lg:flex-wrap gap-2">
                 <input
-                  className="outline-none border rounded-md pl-4 pr-5 py-3 max-md:w-full  font-light text-balck"
+                  className="outline-none border rounded-md pl-4 pr-5 py-3 max-lg:w-full  font-light text-balck"
                   type="date"
                 />
                 {round && (
                   <input
-                    className="outline-none border rounded-md pl-4 pr-5 py-3 max-md:w-full  font-light text-balck"
+                    className="outline-none border rounded-md pl-4 pr-5 py-3 max-lg:w-full  font-light text-balck"
                     type="date"
                   />
                 )}
@@ -138,7 +138,7 @@ function SearchBar() {
                 <Button
                   name={"Search"}
                   css={
-                    "text-center py-3 xl:px-5 2xl:px-10 2xl:py-4 block uppercase cursor-pointer"
+                    "text-center w-full py-3 xl:px-5 2xl:px-10 2xl:py-4 block uppercase cursor-pointer"
                   }
                 />
               </div>

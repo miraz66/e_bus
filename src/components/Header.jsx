@@ -3,6 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 import Button from "../utils/Button";
 import BusIcon from "../assets/BusIcon.png";
+import Modal from "./Model";
 
 const navigation = [{ name: "", href: "/" }];
 
@@ -66,10 +67,10 @@ export default function Header({ children }) {
                   className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static 
                               sm:inset-auto sm:ml-6 sm:pr-0 gap-3 cursor-pointer"
                 >
-                  <Button
-                    name={"Login"}
-                    css={
-                      "max-sm:hidden px-8  py-2 text-xl 2xl:text-2xl 2xl:px-12 2xl:py-3"
+                  <Modal
+                    modelName={"Login"}
+                    modelCss={
+                      "max-sm:hidden px-8  py-2 text-xl 2xl:text-2xl 2xl:px-12 2xl:py-3 text-gray-800 rounded-md bg-gradient-to-br from-sky-300 via-green-300 to-sky-300"
                     }
                   />
 
