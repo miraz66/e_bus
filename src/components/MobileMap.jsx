@@ -6,7 +6,7 @@ function MobileMap() {
       <div className="max-w-7xl p-10 mx-auto flex justify-between m-20 flex-wrap">
         <div className="md:w-1/3">
           <div className="relative bg-[url('./assets/mobilePhoto.png')] h-[31rem] w-60 bg-cover ">
-            <div className="h-[25rem] w-[261px] absolute left-5 bottom-14">
+            <div className="h-[22rem] md:h-[25rem] w-[250px] md:w-[261px] absolute left-5 bottom-14">
               <img className="rounded-3xl" src={mapImage} alt="" />
             </div>
           </div>
