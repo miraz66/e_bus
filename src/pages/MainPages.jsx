@@ -32,7 +32,7 @@ function Home() {
 
       {/* Our partners include  */}
       <div className="max-w-7xl mx-auto lg:mt-28">
-        <div className="">
+        <div>
           <h1 className="text-center 2xl:text-5xl lg:text-4xl md:text-3xl text-2xl  pb-20">
             Our partners include
           </h1>
@@ -80,10 +80,7 @@ function Home() {
       </div>
 
       {/* Footer */}
-
-      <div className="">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

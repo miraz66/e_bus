@@ -8,7 +8,7 @@ function SearchBar() {
 
   return (
     <>
-      <div className=" relative bg-[url('./assets/mainPhoto.jpg')] h-72 bg-contain mb-40">
+      <div className="relative bg-[url('./assets/mainPhoto.jpg')] h-72 bg-contain mb-40">
         <div className="bg-white  p-5 shadow-md md:max-w-4xl lg:max-w-2xl xl:max-w-5xl top-72 xl:top-60 2xl:max-w-7xl absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2  rounded-lg ">
           <div className="flex justify-between">
             <h1 className="2xl:text-4xl lg:text-3xl   text-xl font-semibold text-gray-700 pb-5">
@@ -50,9 +50,9 @@ function SearchBar() {
               </div>
             </>
 
-            <div className=" text-sm gap-2 mt-5 flex max-xl:flex-wrap">
+            <div className="text-sm gap-2 mt-5 flex max-xl:flex-wrap">
               <div className="w-full xl:flex gap-2">
-                <div className=" rounded-md px-2 border flex gap-1 justify-center items-center ">
+                <div className="rounded-md px-2 border flex gap-1 justify-center items-center ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -75,7 +75,7 @@ function SearchBar() {
 
                 <div
                   onClick={() => setRounded(!rounded)}
-                  className=" w-full flex justify-center"
+                  className="w-full flex justify-center"
                 >
                   <svg
                     aria-hidden="true"

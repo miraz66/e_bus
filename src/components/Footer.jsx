@@ -140,7 +140,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="  bg-green-300 py-5">
+      <div className="bg-green-300 py-5">
         <p className="max-w-7xl mx-auto px-10 text-sm xl:text-base">
           © 2023 E-bus. All rights reserved
         </p>

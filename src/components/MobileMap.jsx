@@ -13,7 +13,7 @@ function MobileMap() {
         </div>
 
         <div className="md:w-2/3 my-auto">
-          <h2 className=" text-3xl md:text-4xl xl:text-5xl text-gray-800">
+          <h2 className="text-3xl md:text-4xl xl:text-5xl text-gray-800">
             Track Location
           </h2>
           <hr className="bg-gray-500 h-1 rounded-full mt-4 mb-10" />

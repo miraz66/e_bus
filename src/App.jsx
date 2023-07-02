@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
-import Header from "./components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
 
 // ---All pages---
 import Home from "./pages/MainPages";
@@ -18,7 +18,6 @@ function App() {
           <Header>
             <Routes>
               <Route path="/" element={<Home />} />
-
               <Route path="/app" element={<MobileApp />} />
             </Routes>
           </Header>
