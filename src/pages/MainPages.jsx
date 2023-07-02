@@ -10,7 +10,7 @@ import { RoutsData } from "../assets/routesData/Data";
 
 function Home() {
   return (
-    <div className="">
+    <div>
       {/* SerchBar */}
       <SearchBar />
 
