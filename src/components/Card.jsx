@@ -14,7 +14,7 @@ function Card({
 }) {
   return (
     <>
-      <div className={css}>
+      <div className={css} data-aos="fade-up" data-aos-duration="2000">
         <div className={iconCss}>{icon}</div>
 
         <div className={imgDevCss}>

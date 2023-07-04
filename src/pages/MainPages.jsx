@@ -41,6 +41,8 @@ function Home() {
         <div className="grid gap-5 grid-cols-2 2xl:grid-cols-8 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 ">
           {busData.map((e, index) => (
             <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
               key={index}
               className="w-full border h-32 cursor-pointer rounded-md shadow-xl hover:shadow ease-in flex justify-center items-center  "
             >

@@ -7,7 +7,11 @@ function EBusApp() {
   return (
     <>
       <div className="max-w-7xl mx-auto p-10 flex lg:flex-nowrap flex-wrap-reverse">
-        <div className=" mt-20 lg:mx-0 mx-auto justify-between">
+        <div
+          className="mt-20 lg:mx-0 mx-auto justify-between"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
           <h1 className="2xl:text-4xl text-xl text-gray-800">
             Book buses on the go with the E-bus app.
           </h1>
@@ -68,7 +72,7 @@ function EBusApp() {
           </div>
         </div>
 
-        <div className="mx-auto  ">
+        <div className="mx-auto" data-aos="fade-left" data-aos-duration="3000">
           <div
             onClick={() => navigate("/app")}
             className="p-5 bg-[url('./assets/mobilePhoto.png')] bg-cover lg:h-[720px] h-96 w-64 lg:w-[350px] cursor-pointer"
