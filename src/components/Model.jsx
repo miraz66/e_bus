@@ -6,6 +6,7 @@ import SingUp from "./SingUp";
 function Model({ modelName, modelCss }) {
   const [showModal, setShowModal] = useState(false);
   const [sing, setSing] = useState(true);
+  // const [show, setShow] = useState(true);
 
   return (
     <>

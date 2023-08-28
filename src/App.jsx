@@ -7,7 +7,6 @@ import "aos/dist/aos.css";
 // ---All pages---
 import Home from "./pages/MainPages";
 import MobileApp from "./pages/MobileApp";
-
 export const Mode = createContext();
 
 function App() {
